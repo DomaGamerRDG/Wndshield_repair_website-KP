@@ -31,6 +31,11 @@
       "@id": "https://kunpeter-szelvedojavitas.hu",
       "url": "https://kunpeter-szelvedojavitas.hu",
       "telephone": "+36703168389",
+      "priceRange": "Ár: 5.000 Ft-tól",
+      "email": "kunpeter700417@gmail.com",
+      "sameAs": [
+        "https://www.google.com/maps?q=Kun+Péter+-+szélvédőjavítás+Szombathely,+Varasd+u.+2&output=embed"
+      ],
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Varasd u. 2.",
@@ -430,26 +435,45 @@
         </div>
     </section>
 
-    <!-- Footer (Kétoszlopos, közelebbi elrendezéssel) -->
+    <!-- Footer (Háromoszlopos elrendezés Impresszummal) -->
     <footer class="w-full py-stack-lg bg-primary-container dark:bg-black text-on-primary dark:text-on-primary-fixed">
-        <div class="max-w-container-max mx-auto px-margin-mobile flex flex-col md:flex-row md:justify-start md:gap-32 gap-gutter">
-            <div class="space-y-stack-sm">
+        <div class="max-w-container-max mx-auto px-margin-mobile flex flex-col md:flex-row md:justify-between gap-gutter">
+            <!-- 1. oszlop: Logó és bemutatkozás -->
+            <div class="space-y-stack-sm md:max-w-xs">
                 <div class="flex items-center gap-base">
                     <span class="material-symbols-outlined text-secondary-container text-headline-md">car_repair</span>
                     <span class="font-display-lg text-headline-md text-on-primary">Kun Péter</span>
                 </div>
-                <p class="font-body-md max-w-xs opacity-70">
+                <p class="font-body-md opacity-70">
                     Szakértő autóüveg javítás és szélvédő csere Szombathelyen. Precizitás és maximális biztonság az Ön kényelméért.
                 </p>
             </div>
+            
+            <!-- 2. oszlop: Kapcsolat -->
             <div class="space-y-base">
                 <p class="font-label-bold text-label-bold">Kapcsolat</p>
                 <p class="font-body-md opacity-70">9700 Szombathely, Varasd u. 2.</p>
-                <p class="font-body-md text-secondary-container">+36 70 316 8389</p>
+                <p class="font-body-md text-secondary-container text-lg font-semibold">+36 70 316 8389</p>
+            </div>
+
+            <!-- 3. oszlop: Impresszum (Jogi kötelezettség) -->
+            <div class="space-y-base md:max-w-xs">
+                <p class="font-label-bold text-label-bold">Impresszum</p>
+                <div class="font-body-md opacity-70 space-y-1 text-sm">
+                    <p><span class="font-semibold">Üzemeltető:</span> Kun Péter E.V.</p>
+                    <p><span class="font-semibold">Székhely:</span> 9700 Szombathely, Varasd u. 2.</p>
+                    <p><span class="font-semibold">Adószám:</span> 66250838-1-38</p>
+                    <p><span class="font-semibold">Tárhelyszolgáltató:</span> Vercel Inc. (San Francisco, CA, USA)</p>
+                </div>
             </div>
         </div>
-        <div class="max-w-container-max mx-auto px-margin-mobile mt-stack-lg pt-stack-sm border-t border-outline/20">
-            <p class="font-body-md text-body-md opacity-50">© 2026 Kun Péter - Minden jog fenntartva.</p>
+        
+        <!-- Alsó sáv -->
+        <div class="max-w-container-max mx-auto px-margin-mobile mt-stack-lg pt-stack-sm border-t border-outline/20 flex flex-col md:flex-row justify-between items-center gap-2">
+            <p class="font-body-md text-body-md opacity-50 text-center md:text-left">© 2026 Kun Péter - Minden jog fenntartva.</p>
+            <p class="font-body-md text-body-md opacity-50 text-center md:text-right">
+                Készítette: <span class="font-semibold text-secondary-container opacity-80 hover:opacity-100 transition-opacity">Ress Dominik</span>
+            </p>
         </div>
     </footer>
 
