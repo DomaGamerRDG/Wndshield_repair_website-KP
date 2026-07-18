@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kunpeter-szelvedojavitas.hu/sitemap.xml
+Sitemap: https://www.kunpeter-szelvedojavitas.hu/sitemap.xml
