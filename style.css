@@ -3,7 +3,7 @@
 @plugin "@tailwindcss/container-queries";
 
 @theme {
-  /* Egyedi színek konfigurációja */
+  /* Alap színek átírása v4 formátumra */
   --color-on-secondary-fixed: #341100;
   --color-on-primary: #ffffff;
   --color-primary-container: #131b2e;
@@ -58,7 +58,7 @@
   --radius-xl: 0.5rem;
   --radius-full: 0.75rem;
 
-  /* Egyedi távolságok/spacing */
+  /* Egyedi távolságok - v4-nél a sima --spacing- helyett egyedi fix neveket így adunk meg: */
   --spacing-stack-lg: 48px;
   --spacing-container-max: 1280px;
   --spacing-margin-mobile: 16px;
@@ -77,7 +77,7 @@
   --font-display-lg-mobile: "Montserrat", sans-serif;
 }
 
-/* Egyedi betűméretek és a hozzájuk tartozó tulajdonságok */
+/* Egyedi betűméretek konfigurálása v4-ben utilities segítségével */
 @utility text-display-lg {
   font-size: 48px;
   line-height: 56px;
@@ -131,14 +131,4 @@
     background: rgba(255, 255, 255, 0.95);
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
-}
-
-/* Fejléc / Menüsor fix fehér háttere */
-nav, header, .nav-bar { 
-  background-color: #ffffff !important; 
-}
-
-/* Lábléc / Footer fix sötétkék háttere */
-footer, .footer-section { 
-  background-color: #131b2e !important; 
 }
