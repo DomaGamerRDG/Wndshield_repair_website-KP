@@ -3,6 +3,9 @@
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
     <!-- SEO Beállítások -->
     <title>Kun Péter - Szélvédő Javítás és Csere Szombathelyen | Garanciával</title>
@@ -15,8 +18,8 @@
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Hanken+Grotesk:wght@400;500;700&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Hanken+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" display="swap"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" display="swap"/>
     
     <!-- Egyedi CSS -->
     <link rel="stylesheet" href="style.css">
@@ -90,7 +93,8 @@
     <!-- Hero Section -->
     <section class="relative min-h-[80vh] flex items-center overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <img alt="Szélvédő javítás és csere folyamata" class="w-full h-full object-cover brightness-50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeY4SOICqrLIiX_RTiN2dNBWFkIbM7HR7Rs1xAX2y94j8pgj4E6nH8OMME1Egyg5mRwCwdJjS-aqhqKOSBsLRxogE0URMz9PRo6YzCqynNpV0DS7_i9ggqZ5TcY8Om36xLtTbF8jYKpRewjWUhRIhuZzk3fsDenkHFGpDDCTHQ60I1MBMZkvg90fPmKycd21gl2bLMxTYdd2xyPQn8rCSZ676l8myBA3TZ_FlVDcuWVIPvGhkfyzdRB8Ng16YCF0D0ZCI1vaR9_Q"/>
+            <!-- FIX: Szélesség, magasság és prioritás beállítása a gyorsabb LCP-ért (Lazy load eltávolítva, mert hajtás feletti kép) -->
+            <img alt="Szélvédő javítás és csere folyamata" width="1920" height="1080" fetchpriority="high" class="w-full h-full object-cover brightness-50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeY4SOICqrLIiX_RTiN2dNBWFkIbM7HR7Rs1xAX2y94j8pgj4E6nH8OMME1Egyg5mRwCwdJjS-aqhqKOSBsLRxogE0URMz9PRo6YzCqynNpV0DS7_i9ggqZ5TcY8Om36xLtTbF8jYKpRewjWUhRIhuZzk3fsDenkHFGpDDCTHQ60I1MBMZkvg90fPmKycd21gl2bLMxTYdd2xyPQn8rCSZ676l8myBA3TZ_FlVDcuWVIPvGhkfyzdRB8Ng16YCF0D0ZCI1vaR9_Q"/>
         </div>
         <div class="max-w-container-max mx-auto px-margin-mobile relative z-10 w-full">
             <div class="max-w-3xl">
@@ -149,7 +153,7 @@
                         <span>Garanciával</span>
                     </div>
                 </div>
-                <!-- Card 3 (Frissítve tisztításról cserére) -->
+                <!-- Card 3 -->
                 <div class="bg-surface-container-lowest border border-outline-variant p-stack-md rounded-xl hover:shadow-md hover:border-secondary transition-all duration-300 group">
                     <div class="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-stack-sm group-hover:bg-secondary/20">
                         <span class="material-symbols-outlined text-secondary text-headline-md">front_loader</span>
@@ -205,7 +209,8 @@
             </div>
             <div class="w-full md:w-1/2 relative">
                 <div class="aspect-video bg-surface-container rounded-xl overflow-hidden shadow-2xl relative">
-                    <img class="w-full h-full object-cover" alt="Profi autóüveg javító és szélvédőcsere műhely" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjxHsD_PVgCfRl5Ph4B9IyhAdOv7XmZ0eBfAL1p8GGsahAW0M4EOgrqHOZX_cPMFlvzkT9bU6JdjPZfb5KdFnmCfDXZ7LetXoVjzNdRa-ZD_LqHJLF4jWYsFh6wfP7YGNxUBHeeLouvFGxrK1wwZPfNI6xTbHmM6UGmYoHUiUq2EJw-IJd1BtNhohsTDZy6XBr7kcYnWikR4px34ljltI7A_hdF8v_EvTXx_2T17pfmKY4W7GXJ-03mo0-hx6RO8s4mnCdxwmNlQ"/>
+                    <!-- FIX: Képméret explicit megadása (aspect-video arányban pl. 800x450) + Lazy loading -->
+                    <img class="w-full h-full object-cover" width="800" height="450" loading="lazy" alt="Profi autóüveg javító és szélvédőcsere műhely" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjxHsD_PVgCfRl5Ph4B9IyhAdOv7XmZ0eBfAL1p8GGsahAW0M4EOgrqHOZX_cPMFlvzkT9bU6JdjPZfb5KdFnmCfDXZ7LetXoVjzNdRa-ZD_LqHJLF4jWYsFh6wfP7YGNxUBHeeLouvFGxrK1wwZPfNI6xTbHmM6UGmYoHUiUq2EJw-IJd1BtNhohsTDZy6XBr7kcYnWikR4px34ljltI7A_hdF8v_EvTXx_2T17pfmKY4W7GXJ-03mo0-hx6RO8s4mnCdxwmNlQ"/>
                     <div class="absolute inset-0 bg-gradient-to-t from-primary-container/60 to-transparent"></div>
                 </div>
                 <div class="absolute -bottom-base -left-base bg-secondary-container p-stack-sm rounded-lg shadow-lg">
@@ -315,7 +320,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Éves Díjak / Elismerések Szekció (A trust badge-ek helyén) -->
+            <!-- Éves Díjak / Elismerések Szekció -->
             <div class="mt-12 bg-[#1b252f] rounded-2xl p-6 md:p-8 border border-[#2e3b4a] shadow-lg flex flex-col md:flex-row items-center justify-between gap-6 max-w-4xl mx-auto">
                 <div class="text-center md:text-left space-y-2 max-w-md">
                     <h3 class="text-lg font-bold text-amber-400 flex items-center justify-center md:justify-start gap-2">
@@ -328,7 +333,8 @@
                 </div>
                 <!-- Az elismeréseket tartalmazó kép -->
                 <div class="w-full md:w-auto flex justify-center">
-                    <img src="badge.webp" alt="Éves elismerések" class="max-h-[120px] object-contain rounded-lg">
+                    <!-- FIX: Megadva a pontos 360x120-as méret attribútumként + Lazy loading -->
+                    <img src="badge.webp" alt="Éves elismerések" width="360" height="120" loading="lazy" class="max-h-[120px] object-contain rounded-lg">
                 </div>
             </div>
         </div>
@@ -395,7 +401,6 @@
                     </a>
                 </div>
                 <div class="w-full lg:w-2/3 rounded-xl overflow-hidden border border-outline-variant min-h-[300px] md:min-h-[400px] relative">
-                    <!-- Konténer relatív, a térkép abszolút módon feszül ki benne -->
                     <iframe 
                         src="https://www.google.com/maps?q=Kun+Péter+-+szélvédőjavítás+Szombathely,+Varasd+u.+2&output=embed" 
                         class="absolute top-0 left-0 w-full h-full border-0" 
