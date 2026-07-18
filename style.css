@@ -132,3 +132,13 @@
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
 }
+
+/* Fejléc / Menüsor fix fehér háttere */
+nav, header, .nav-bar { 
+  background-color: #ffffff !important; 
+}
+
+/* Lábléc / Footer fix sötétkék háttere */
+footer, .footer-section { 
+  background-color: #131b2e !important; 
+}
