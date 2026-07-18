@@ -2,7 +2,119 @@
 @plugin "@tailwindcss/forms";
 @plugin "@tailwindcss/container-queries";
 
-/* Ide jöhet a saját egyedi CSS-ed, ha van */
+@theme {
+  /* Egyedi színek konfigurációja */
+  --color-on-secondary-fixed: #341100;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #131b2e;
+  --color-on-primary-fixed-variant: #3f465c;
+  --color-inverse-on-surface: #eff1f3;
+  --color-primary-fixed: #dae2fd;
+  --color-tertiary-fixed-dim: #b9c7e0;
+  --color-tertiary: #000000;
+  --color-surface-variant: #e0e3e5;
+  --color-surface-bright: #f7f9fb;
+  --color-on-error-container: #93000a;
+  --color-on-background: #191c1e;
+  --color-on-primary-fixed: #131b2e;
+  --color-on-tertiary-fixed-variant: #3a485c;
+  --color-surface-container-high: #e6e8ea;
+  --color-primary-fixed-dim: #bec6e0;
+  --color-surface-container-lowest: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-tertiary: #ffffff;
+  --color-on-primary-container: #7c839b;
+  --color-outline: #76777d;
+  --color-on-secondary-fixed-variant: #783200;
+  --color-surface-dim: #d8dadc;
+  --color-secondary: #9d4300;
+  --color-secondary-fixed: #ffdbca;
+  --color-on-surface-variant: #45464d;
+  --color-on-error: #ffffff;
+  --color-on-secondary-container: #5c2400;
+  --color-tertiary-fixed: #d5e3fd;
+  --color-on-surface: #191c1e;
+  --color-primary: #000000;
+  --color-surface: #f7f9fb;
+  --color-error: #ba1a1a;
+  --color-surface-tint: #565e74;
+  --color-outline-variant: #c6c6cd;
+  --color-on-tertiary-fixed: #0d1c2f;
+  --color-inverse-surface: #2d3133;
+  --color-on-tertiary-container: #76859b;
+  --color-surface-container-highest: #e0e3e5;
+  --color-tertiary-container: #0d1c2f;
+  --color-surface-container-low: #f2f4f6;
+  --color-secondary-container: #fd761a;
+  --color-on-secondary: #ffffff;
+  --color-background: #f7f9fb;
+  --color-surface-container: #eceef0;
+  --color-secondary-fixed-dim: #ffb690;
+  --color-inverse-primary: #bec6e0;
+
+  /* Egyedi lekerekítések */
+  --radius-DEFAULT: 0.125rem;
+  --radius-lg: 0.25rem;
+  --radius-xl: 0.5rem;
+  --radius-full: 0.75rem;
+
+  /* Egyedi távolságok/spacing */
+  --spacing-stack-lg: 48px;
+  --spacing-container-max: 1280px;
+  --spacing-margin-mobile: 16px;
+  --spacing-stack-sm: 12px;
+  --spacing-stack-md: 24px;
+  --spacing-base: 8px;
+  --spacing-gutter: 24px;
+
+  /* Egyedi betűtípusok */
+  --font-display-lg: "Montserrat", sans-serif;
+  --font-caption: "Hanken Grotesk", sans-serif;
+  --font-body-md: "Hanken Grotesk", sans-serif;
+  --font-body-lg: "Hanken Grotesk", sans-serif;
+  --font-headline-md: "Montserrat", sans-serif;
+  --font-label-bold: "Hanken Grotesk", sans-serif;
+  --font-display-lg-mobile: "Montserrat", sans-serif;
+}
+
+/* Egyedi betűméretek és a hozzájuk tartozó tulajdonságok */
+@utility text-display-lg {
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+@utility text-caption {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+}
+@utility text-body-md {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+@utility text-body-lg {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+}
+@utility text-headline-md {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+}
+@utility text-label-bold {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+@utility text-display-lg-mobile {
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+}
 
 /* Google Material Symbols konfiguráció */
 .material-symbols-outlined {
