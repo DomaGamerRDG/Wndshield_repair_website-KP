@@ -67,14 +67,14 @@
   --spacing-base: 8px;
   --spacing-gutter: 24px;
 
-  /* Egyedi betűtípusok */
-  --font-display-lg: "Montserrat", sans-serif;
-  --font-caption: "Hanken Grotesk", sans-serif;
-  --font-body-md: "Hanken Grotesk", sans-serif;
-  --font-body-lg: "Hanken Grotesk", sans-serif;
-  --font-headline-md: "Montserrat", sans-serif;
-  --font-label-bold: "Hanken Grotesk", sans-serif;
-  --font-display-lg-mobile: "Montserrat", sans-serif;
+  /* Rendszerbetűtípusok (külső letöltés nélkül) */
+  --font-display-lg: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-caption: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-body-md: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-body-lg: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-headline-md: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-label-bold: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-display-lg-mobile: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
 }
 
 /* Egyedi betűméretek konfigurálása v4-ben utilities segítségével */
