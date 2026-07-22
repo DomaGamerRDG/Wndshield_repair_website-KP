@@ -1,3 +1,4 @@
+@import '@fontsource-variable/material-symbols-outlined';
 @import "tailwindcss";
 @plugin "@tailwindcss/forms";
 @plugin "@tailwindcss/container-queries";
