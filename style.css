@@ -1,4 +1,4 @@
-@import '@fontsource-variable/material-symbols-outlined';
+@import "../node_modules/@fontsource-variable/material-symbols-outlined/index.css";
 @import "tailwindcss";
 @plugin "@tailwindcss/forms";
 @plugin "@tailwindcss/container-queries";
