@@ -26,6 +26,10 @@
   -webkit-font-smoothing: antialiased;
 }
 
+.symbol-filled {
+  font-variation-settings: 'FILL' 1;
+}
+
 @theme {
   /* Alap színek átírása v4 formátumra */
   --color-on-secondary-fixed: #341100;
